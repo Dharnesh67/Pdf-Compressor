@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PDF Compressor
+
+A browser-based PDF compression tool that allows you to reduce the size of your PDF files without uploading them to any server. All processing happens right in your browser for enhanced privacy and security.
+
+## Features
+
+- Compress PDF files quickly and easily
+- Choose from multiple compression levels
+- No file size limits
+- Client-side processing - your files never leave your device
+- Fast and responsive interface
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to get a copy of the project up and running on your local machine.
 
+### Prerequisites
+
+- Node.js (version 18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository or download it as a ZIP
+```bash
+git clone https://github.com/yourusername/pdf-compressor.git
+cd pdf-compressor
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Use
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Drag and drop your PDF file onto the upload area or click to select a file
+2. Choose a compression level:
+   - Low: Lower compression, better quality
+   - Medium: Balanced compression and quality
+   - High: Higher compression, reduced quality
+3. Click the "Compress PDF" button
+4. Once processing is complete, download your compressed PDF file
 
-## Learn More
+## Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+# or
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - UI library
+- [pdf-lib](https://pdf-lib.js.org/) - PDF manipulation library
+- [TypeScript](https://www.typescriptlang.org/) - For type safety
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Privacy
+
+Your privacy is important:
+- Files are never uploaded to any server
+- All processing happens locally in your browser
+- No data is collected about your files
